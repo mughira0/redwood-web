@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Custom color scheme */
+    --body-bg-color: #311c16;
+    --body-bg-light: #42251d;
+    --white: #fff;
+    --primary-color: #b69865;
+    --secondary-color: #fff2dc;
+    --tertiary-color: #a59e93;
+    --border-color-2: #ded5c3;
+    --border-color-1: #4e3832;
+    --white-color: #fff;
+    --bg-light: #fbf8f3;
+    --bg-dark: #fff3de;
+    --black-color: #311c16;
+    --rate-color: #ffae00;
+
+    /* Tailwind CSS variables */
+    --background: 36 33% 97%;
+    --foreground: 20 40% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 40% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 40% 14%;
+    --primary: 35 36% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 39 100% 94%;
+    --secondary-foreground: 20 40% 14%;
+    --muted: 30 10% 61%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --accent: 39 100% 94%;
+    --accent-foreground: 20 40% 14%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 33 30% 81%;
+    --input: 33 30% 81%;
+    --ring: 35 36% 55%;
+    --radius: 0.5rem;
+
+    /* Special treatments section colors */
+    --treatment-dark: 20 40% 14%;
+    --treatment-light: 39 100% 94%;
+  }
+
+  .dark {
+    --background: 20 40% 14%;
+    --foreground: 39 100% 94%;
+    --card: 20 40% 14%;
+    --card-foreground: 39 100% 94%;
+    --popover: 20 40% 14%;
+    --popover-foreground: 39 100% 94%;
+    --primary: 35 36% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 20 30% 26%;
+    --secondary-foreground: 39 100% 94%;
+    --muted: 20 30% 26%;
+    --muted-foreground: 30 10% 61%;
+    --accent: 20 30% 26%;
+    --accent-foreground: 39 100% 94%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 39 100% 94%;
+    --border: 20 30% 26%;
+    --input: 20 30% 26%;
+    --ring: 35 36% 55%;
+
+    /* Special treatments section colors */
+    --treatment-dark: 20 40% 14%;
+    --treatment-light: 39 100% 94%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Roboto", sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Cormorant", serif;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.font-primary {
+  font-family: "Cormorant", serif;
+}
+
+.font-secondary {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Custom utility classes */
+.bg-body {
+  background-color: var(--body-bg-color);
+}
+
+.bg-body-light {
+  background-color: var(--body-bg-light);
+}
+
+.text-primary-custom {
+  color: var(--primary-color);
+}
+
+.bg-primary-custom {
+  background-color: var(--primary-color);
+}
+
+.text-secondary-custom {
+  color: var(--secondary-color);
+}
+
+.bg-secondary-custom {
+  background-color: var(--secondary-color);
+}
+
+.text-tertiary {
+  color: var(--tertiary-color);
+}
+
+.bg-light-custom {
+  background-color: var(--bg-light);
+}
+
+.bg-dark-custom {
+  background-color: var(--bg-dark);
+}
+
+.border-custom-1 {
+  border-color: var(--border-color-1);
+}
+
+.border-custom-2 {
+  border-color: var(--border-color-2);
+}
+
+.text-rate {
+  color: var(--rate-color);
+}
